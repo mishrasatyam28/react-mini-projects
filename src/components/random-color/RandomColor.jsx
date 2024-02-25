@@ -23,4 +23,5 @@ export default function RandomColor() {
       </div>
     </div>
   );
+//generic comments 
 }
