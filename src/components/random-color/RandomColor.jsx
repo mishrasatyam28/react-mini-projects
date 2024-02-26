@@ -24,3 +24,5 @@ export default function RandomColor() {
     </div>
   );
 }
+
+// one more genric
