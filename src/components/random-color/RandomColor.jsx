@@ -23,7 +23,8 @@ export default function RandomColor() {
       </div>
     </div>
   );
-//generic comments 
+  //generic comments
 }
 
 // one more genric
+// one more genric-27
