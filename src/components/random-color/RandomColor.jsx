@@ -28,3 +28,4 @@ export default function RandomColor() {
 
 // one more genric
 // one more genric-27
+// one more genric-28
