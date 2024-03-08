@@ -59,3 +59,6 @@ const ImageSlider = ({ url, limit = 5, page = 1 }) => {
 };
 
 export default ImageSlider;
+
+// 1:09
+// random
