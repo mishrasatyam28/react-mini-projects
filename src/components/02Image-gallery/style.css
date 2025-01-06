@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto auto;
+    padding-top: 30px;
+    
+}
+
+.image-container-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto auto;
+    flex-wrap: wrap; 
+    gap:10px;
+    
+}
+.img-section{
+    flex-wrap: wrap;
+    width: 300px;
+    border-radius: 10px; 
+}

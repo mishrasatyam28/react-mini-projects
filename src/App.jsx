@@ -4,12 +4,21 @@ import RandomColor from "./components/random-color/RandomColor";
 import StarRating from "./components/star-rating/StarRating";
 import ImageSlider from "./components/image-slider/ImageSlider";
 import Counter from "./components/01counter/Counter";
+import ImageGallery from "./components/02Image-gallery/ImageGallery";
+import GuessNumber from "./components/03GuessNumber/GuessNumber";
 
 function App() {
   return (
     <div>
-      {/* Counter */}
-      <Counter/>
+      {/* 01Counter */}
+      <Counter />
+
+      {/* 02Image-Gallery */}
+      <ImageGallery />
+
+      {/* 03GuessNumbet */}
+      <GuessNumber />
+      
       {/* Accordian component */}
       <Accordian />
 
@@ -21,11 +30,11 @@ function App() {
 
       {/* Image slider component */}
 
-      <ImageSlider
+      {/* <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"4"}
-      />
+      /> */}
     </div>
   );
 }

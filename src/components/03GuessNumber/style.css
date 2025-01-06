@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto auto;
+    padding-top: 30px;
+    
+}
+.flex-button{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 20px;
+    
+}
+.button{
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+.guess-input{
+    padding: 10px 15px;
+    width: 20vw;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}

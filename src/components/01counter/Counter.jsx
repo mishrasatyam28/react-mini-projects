@@ -24,7 +24,7 @@ const Counter = () => {
           <div className="sequence">
               <p className='sr-number'>1</p>
           </div>
-          <h1 className='title-counter'>Counter</h1>
+          <h1 className='title-counter'>01-Counter</h1>
           <p>{count}</p>
           <div className="flex-button">
               <button onClick={handleDecrement} className='button'>-</button>
