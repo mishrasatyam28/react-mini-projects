@@ -29,3 +29,26 @@
     font-weight: 600;
     border-radius: 5px;
 }
+.form-container{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto auto;
+    padding-top: 30px; 
+    gap: 10px; 
+}
+
+.form-container input{
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+.form-container label{
+    font-size: 18px;
+}

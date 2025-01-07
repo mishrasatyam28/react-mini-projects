@@ -9,12 +9,10 @@ const GuessNumber = () => {
     const [highGuess, setHighGuess] = useState(false);
     const [correctGuess, setCorrectGuess] = useState(false);
 
-    // Initialize the random number when the component mounts
   useEffect(() => {
-      setRandomNumber(Math.round(100 * Math.random()));
-      console.log(randomNumber)
+      setRandomNumber(Math.round(100 * Math.random())); 
   }, []);
-
+ 
   // Handle user guess submission where we Check if the user guess is lower, higher, or correct
   const handleGuess = (e) => {
     e.preventDefault();
@@ -45,7 +43,8 @@ const GuessNumber = () => {
   };
   return (
     <div className="container">
-      <form onSubmit={handleGuess}>
+      <h1>03-Guess Number</h1>
+      <form onSubmit={handleGuess} className='form-container'>
         <label htmlFor="input">Guess a Number between 0 and 100</label>
         <input
           id="input"
@@ -57,10 +56,10 @@ const GuessNumber = () => {
           onChange={(e) => setUserGuess(Number(e.target.value))}
         />
         <div className="flex-button">
-          <button type="reset" onClick={handleRestart}>
+          <button className='button' type="reset" onClick={handleRestart}>
             Reset
           </button>
-          <button type="submit" disabled={guessDisabled}>
+          <button className='button' type="submit" disabled={guessDisabled}>
             Check
           </button>
         </div>
