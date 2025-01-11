@@ -1,11 +1,11 @@
-import { useState } from "react";
-import Accordian from "./components/accordian/Accordian";
-import RandomColor from "./components/random-color/RandomColor";
-import StarRating from "./components/star-rating/StarRating";
-import ImageSlider from "./components/image-slider/ImageSlider";
 import Counter from "./components/01counter/Counter";
 import ImageGallery from "./components/02Image-gallery/ImageGallery";
 import GuessNumber from "./components/03GuessNumber/GuessNumber";
+import Accordian from "./components/04Accordian/Accordian";
+import RandomColor from "./components/random-color/RandomColor";
+import ImageSlider from "./components/image-slider/ImageSlider";
+import StarRating from "./components/05start-rating";
+import TelephoneFormatter from "./components/06Telephone-formatter";
 
 function App() {
   return (
@@ -18,15 +18,20 @@ function App() {
 
       {/* 03GuessNumbet */}
       <GuessNumber />
+
       
-      {/* Accordian component */}
+      {/* 04Accordian */}
       <Accordian />
+
+      {/* 05Star-rating */}
+      <StarRating noOfStars={10} />
+
+      {/* 06Telephone Formatter */}
+      <TelephoneFormatter/>
 
       {/* Random Color Component */}
       <RandomColor />
 
-      {/* Star Rating */}
-      <StarRating noOfStars={10} />
 
       {/* Image slider component */}
 
