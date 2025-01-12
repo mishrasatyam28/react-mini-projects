@@ -11,7 +11,8 @@ const TelephoneFormatter = () => {
         const numStr = getStringWithNumberOnly(e.target.value)
 
         setPhoneValue(
-            numStr.length > 3 ? " +(" + numStr.substring(0,3) + ") - " + numStr.substring(3)  : numStr
+            numStr.length > 3 ? " +(" + numStr.substring(0, 3) + ") - " + numStr.substring(3) : numStr
+            
         )
     }
 

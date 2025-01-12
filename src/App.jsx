@@ -6,6 +6,7 @@ import RandomColor from "./components/random-color/RandomColor";
 import ImageSlider from "./components/image-slider/ImageSlider";
 import StarRating from "./components/05start-rating";
 import TelephoneFormatter from "./components/06Telephone-formatter";
+import StringTransformers from "./components/07string-transformer/index";
 
 function App() {
   return (
@@ -27,8 +28,10 @@ function App() {
       <StarRating noOfStars={10} />
 
       {/* 06Telephone Formatter */}
-      <TelephoneFormatter/>
-
+      <TelephoneFormatter />
+      
+      {/* 07String-transformer */}
+          <StringTransformers/>
       {/* Random Color Component */}
       <RandomColor />
 
