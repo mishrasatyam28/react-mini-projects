@@ -7,6 +7,7 @@ import ImageSlider from "./components/image-slider/ImageSlider";
 import StarRating from "./components/05start-rating";
 import TelephoneFormatter from "./components/06Telephone-formatter";
 import StringTransformers from "./components/07string-transformer/index";
+import TicTacToe from "./components/08TicTacToe";
 
 function App() {
   return (
@@ -31,7 +32,11 @@ function App() {
       <TelephoneFormatter />
       
       {/* 07String-transformer */}
-          <StringTransformers/>
+      <StringTransformers />
+      
+      {/* 08 TicTacToe */}
+      <TicTacToe/>
+
       {/* Random Color Component */}
       <RandomColor />
 
