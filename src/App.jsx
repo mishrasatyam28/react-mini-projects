@@ -2,12 +2,13 @@ import Counter from "./components/01counter/Counter";
 import ImageGallery from "./components/02Image-gallery/ImageGallery";
 import GuessNumber from "./components/03GuessNumber/GuessNumber";
 import Accordian from "./components/04Accordian/Accordian";
-import RandomColor from "./components/random-color/RandomColor";
+
 import ImageSlider from "./components/image-slider/ImageSlider";
 import StarRating from "./components/05start-rating";
 import TelephoneFormatter from "./components/06Telephone-formatter";
 import StringTransformers from "./components/07string-transformer/index";
 import TicTacToe from "./components/08TicTacToe";
+import RandomColorGenrator from "./components/09random-color/index";
 
 function App() {
   return (
@@ -37,8 +38,8 @@ function App() {
       {/* 08 TicTacToe */}
       <TicTacToe/>
 
-      {/* Random Color Component */}
-      <RandomColor />
+      {/* 09-Color Genrator */}
+      <RandomColorGenrator/>
 
 
       {/* Image slider component */}
