@@ -2,13 +2,12 @@ import Counter from "./components/01counter/Counter";
 import ImageGallery from "./components/02Image-gallery/ImageGallery";
 import GuessNumber from "./components/03GuessNumber/GuessNumber";
 import Accordian from "./components/04Accordian/Accordian";
-
-import ImageSlider from "./components/image-slider/ImageSlider";
 import StarRating from "./components/05start-rating";
 import TelephoneFormatter from "./components/06Telephone-formatter";
 import StringTransformers from "./components/07string-transformer/index";
 import TicTacToe from "./components/08TicTacToe";
 import RandomColorGenrator from "./components/09random-color/index";
+import ImageSlider from "./components/10image-slider/index";
 
 function App() {
   return (
@@ -42,13 +41,13 @@ function App() {
       <RandomColorGenrator/>
 
 
-      {/* Image slider component */}
+      {/* 10-Image slider component */}
 
-      {/* <ImageSlider
+      <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
-        limit={"4"}
-      /> */}
+        limit={"10"}
+      />
     </div>
   );
 }
