@@ -8,6 +8,7 @@ import StringTransformers from "./components/07string-transformer/index";
 import TicTacToe from "./components/08TicTacToe";
 import RandomColorGenrator from "./components/09random-color/index";
 import ImageSlider from "./components/10image-slider/index";
+import { LoadMoreData } from "./components/11loadmore-data";
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
         page={"1"}
         limit={"10"}
       />
+
+      {/* 11 -Loadmore button */}
+      <LoadMoreData/>
     </div>
   );
 }

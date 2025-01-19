@@ -36,7 +36,7 @@ const ImageSlider = ({ url, limit=5, page=1 }) => {
             fetchImages(url)
         }
     }, [url])
-    console.log(images, "images")
+    // console.log(images, "images")
     
     if (loading) {
         return <div className="">Loading data! Please wait.</div>
@@ -46,8 +46,10 @@ const ImageSlider = ({ url, limit=5, page=1 }) => {
         return <div className="">Error Occured! {errorMsg}</div>
     }
     
-  return (
-          <div className="image-container">
+    return (
+        <>
+        <h1 style={{textAlign:"center"}}>10-Image Slider</h1>
+      <div className="image-container">
               <BsArrowLeftCircleFill onClick={handlePrevious} className='arrow arrow-left' />
               {
                   images && images.length ?
@@ -70,7 +72,8 @@ const ImageSlider = ({ url, limit=5, page=1 }) => {
                 </button>) : null
               }
               </span>
-          </div>  
+            </div>  
+            </>
   )
 }
 
