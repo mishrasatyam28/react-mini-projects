@@ -13,6 +13,8 @@ import { TreeView } from "./components/12Tres-view";
 import menus from "./components/12Tres-view/data";
 import { QrCodeGenerator } from "./components/13qr-code-generator";
 import { LightDarkMode } from "./components/14theme-switch";
+import ScrollIndicator from "./components/15scroll-indicator";
+
 
 function App() {
   return (
@@ -64,7 +66,10 @@ function App() {
       {/* <QrCodeGenerator /> */}
       
       {/* 14 - Theme Switch */}
-      <LightDarkMode/>
+      {/* <LightDarkMode/> */}
+
+      {/* 15-Scroll Indicator */}
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
     </div>
   );
 }
