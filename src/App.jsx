@@ -14,6 +14,7 @@ import menus from "./components/12Tres-view/data";
 import { QrCodeGenerator } from "./components/13qr-code-generator";
 import { LightDarkMode } from "./components/14theme-switch";
 import ScrollIndicator from "./components/15scroll-indicator";
+import { TabTest } from "./components/16Tabs/tab-test";
 
 
 function App() {
@@ -69,7 +70,10 @@ function App() {
       {/* <LightDarkMode/> */}
 
       {/* 15-Scroll Indicator */}
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
+
+      {/* 16- Tabs */}
+      <TabTest/>
     </div>
   );
 }
