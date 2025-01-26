@@ -15,6 +15,7 @@ import { QrCodeGenerator } from "./components/13qr-code-generator";
 import { LightDarkMode } from "./components/14theme-switch";
 import ScrollIndicator from "./components/15scroll-indicator";
 import { TabTest } from "./components/16Tabs/tab-test";
+import ModalTest from "./components/17custom-modal/modal-test";
 
 
 function App() {
@@ -73,7 +74,10 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
 
       {/* 16- Tabs */}
-      <TabTest/>
+      {/* <TabTest/> */}
+
+      {/* 17 - modal */}
+      <ModalTest/>
     </div>
   );
 }
