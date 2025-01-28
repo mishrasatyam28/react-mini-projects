@@ -16,6 +16,7 @@ import { LightDarkMode } from "./components/14theme-switch";
 import ScrollIndicator from "./components/15scroll-indicator";
 import { TabTest } from "./components/16Tabs/tab-test";
 import ModalTest from "./components/17custom-modal/modal-test";
+import { GithubProfileFinder } from "./components/18github-profile-finder";
 
 
 function App() {
@@ -77,7 +78,10 @@ function App() {
       {/* <TabTest/> */}
 
       {/* 17 - modal */}
-      <ModalTest/>
+      {/* <ModalTest/> */}
+
+      {/* 18 - Github Profile finder */}
+      <GithubProfileFinder/>
     </div>
   );
 }
