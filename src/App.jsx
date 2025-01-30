@@ -18,6 +18,8 @@ import { TabTest } from "./components/16Tabs/tab-test";
 import ModalTest from "./components/17custom-modal/modal-test";
 import { GithubProfileFinder } from "./components/18github-profile-finder";
 import SearchAutoComplete from "./components/19search-auto-complete";
+import FeatureFlags from "./components/20feature-flag";
+import FeatureFlagGlobalStore from "./components/20feature-flag/context";
 
 
 function App() {
@@ -85,7 +87,12 @@ function App() {
       {/* <GithubProfileFinder/> */}
 
       {/* 19- Search Auto Complete */}
-      <SearchAutoComplete/>
+      {/* <SearchAutoComplete/> */}
+
+      {/* 20 Feature Flag  */}
+      <FeatureFlagGlobalStore>
+        <FeatureFlags/>
+      </FeatureFlagGlobalStore>
     </div>
   );
 }
