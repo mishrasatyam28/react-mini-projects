@@ -20,6 +20,7 @@ import { GithubProfileFinder } from "./components/18github-profile-finder";
 import SearchAutoComplete from "./components/19search-auto-complete";
 import FeatureFlags from "./components/20feature-flag";
 import FeatureFlagGlobalStore from "./components/20feature-flag/context";
+import UsefetchHookTest from "./components/21useFetch-hook/test";
 
 
 function App() {
@@ -90,9 +91,12 @@ function App() {
       {/* <SearchAutoComplete/> */}
 
       {/* 20 Feature Flag  */}
-      <FeatureFlagGlobalStore>
+      {/* <FeatureFlagGlobalStore>
         <FeatureFlags/>
-      </FeatureFlagGlobalStore>
+      </FeatureFlagGlobalStore> */}
+
+      {/* 21 Usefetch - Custom Hook */}
+      <UsefetchHookTest/>
     </div>
   );
 }
