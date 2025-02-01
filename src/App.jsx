@@ -21,6 +21,7 @@ import SearchAutoComplete from "./components/19search-auto-complete";
 import FeatureFlags from "./components/20feature-flag";
 import FeatureFlagGlobalStore from "./components/20feature-flag/context";
 import UsefetchHookTest from "./components/21useFetch-hook/test";
+import UseOnclickOutsideTest from "./components/22useOutside-click/test";
 
 
 function App() {
@@ -96,7 +97,10 @@ function App() {
       </FeatureFlagGlobalStore> */}
 
       {/* 21 Usefetch - Custom Hook */}
-      <UsefetchHookTest/>
+      {/* <UsefetchHookTest/> */}
+
+      {/* 22 Use OnClick Outside Hook test  */}
+      <UseOnclickOutsideTest/>
     </div>
   );
 }
