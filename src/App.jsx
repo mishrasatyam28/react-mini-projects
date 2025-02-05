@@ -25,6 +25,7 @@ import UseOnclickOutsideTest from "./components/22useOutside-click/test";
 import UseWindowResizeTest from "./components/23useWindow-resize/test";
 import ScrollToTopAndBottom from "./components/24scroll-to-top-and-bottom";
 import ScrollToSection from "./components/25scroll-to-section/scroll-to-section";
+import WheatherAppTest from "./components/26-wheather-app";
 
 
 function App() {
@@ -112,7 +113,10 @@ function App() {
       {/* <ScrollToTopAndBottom/> */}
 
       {/* 25 - Scroll To particular section */}
-      <ScrollToSection/>
+      {/* <ScrollToSection/> */}
+
+      {/* 26 - Wheather App */}
+      <WheatherAppTest/>
     </div>
   );
 }
