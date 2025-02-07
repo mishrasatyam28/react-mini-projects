@@ -1,9 +1,12 @@
-import React from 'react'
+import '../styles.css'
 
-function Search() {
+function Search({search,setSearch, handleSearch}) {
   return (
-    <div>Editing file</div>
+    <div className='search-engine'>
+      <input type="text" className="city-search" placeholder='Enter City Name' name="search" value={search} onChange={(event) => setSearch(event.target.value)} />
+      <button className='search-btn' onClick={handleSearch}>Search Wheather</button>
+    </div>
   )
 }
 
-export default index
+export default Search
