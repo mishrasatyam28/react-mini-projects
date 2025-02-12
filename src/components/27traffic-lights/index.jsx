@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './styles.css'
+import TrafficLightComp from './TrafficLight'
 
 const trafficLightdata = [
     {
@@ -39,9 +40,10 @@ function TrafficLight() {
           <div className="trafficLigthContainer">
               {
                   trafficLightdata.map((light, index) => (
-                      <div key={index} className={`trafficLight ${activeLight === light.color ? light.bgColorClass : 'background-grey' }`}>
+                    //   <div key={index} className={`trafficLight ${activeLight === light.color ? light.bgColorClass : 'background-grey' }`}>
                           
-                      </div>
+                      //   </div>
+                      <TrafficLightComp key={index} isActive={activeLight===light.color} bgColor={light.bgColorClass}/>
                   ))
               }
           </div>
