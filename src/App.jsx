@@ -27,6 +27,7 @@ import ScrollToTopAndBottom from "./components/24scroll-to-top-and-bottom";
 import ScrollToSection from "./components/25scroll-to-section/scroll-to-section";
 import WheatherAppTest from "./components/26-wheather-app";
 import TrafficLight from "./components/27traffic-lights";
+import CheckoutStepperTest from "./components/28stepper";
 
 
 function App() {
@@ -120,7 +121,10 @@ function App() {
       {/* <WheatherAppTest/> */}
 
       {/* 27 - Traffic Light */}
-      <TrafficLight/>
+      {/* <TrafficLight/> */}
+
+      {/* 28 - Stepper */}
+      <CheckoutStepperTest/>
       
     </div>
   );
