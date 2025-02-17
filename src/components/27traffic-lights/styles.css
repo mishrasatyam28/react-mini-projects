@@ -1,0 +1,25 @@
+.trafficLigthContainer{
+    background: #000;
+    width: 120px;
+    padding: 10px;
+}
+
+.trafficLight{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.background-red{
+    background-color: red;
+}
+.background-yellow{
+    background-color: yellow;
+}
+.background-green{
+    background-color: green;
+}
+.background-grey{
+    background-color: gray;
+}
