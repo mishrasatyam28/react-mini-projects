@@ -32,8 +32,11 @@ function CheckoutStepper({ stepConfig = [] }) {
     const ActiveComponent = stepConfig[currentStep - 1]?.Component;
 
     useEffect(() => {
-        
-    },[stepRef.current])
+        setMargin({
+            marginLeft: stepRef.current[0].offsetWidth/2,
+            MarginRight:stepRef.current[stepConfig.length-1].offsetWidth/2,
+        })
+    },[stepRef])
 
 
     return (
@@ -54,7 +57,7 @@ function CheckoutStepper({ stepConfig = [] }) {
                 
                   {/* progress bar */}
 
-            <div className="progress-bar">
+            <div className="progress-bar" style={{width:`calc(100% ${margin.marginLeft + margin.MarginRight}px)`,marginLeft:margin.marginLeft,marginRight:margin.MarginRight}}>
                 <div className="progress" style={{width:`${calculateProgressBarWidth()}%`}}></div>
             </div>
             
