@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './styles.css'
 
 function CheckoutStepper({ stepConfig = [] }) {
-    const [currentStep, setCurrentStep] = useState(2);
+    const [currentStep, setCurrentStep] = useState(1);
     const [isCompleted, setIsCompleted] = useState(false);
     const stepRef = useRef([]);
     const [margin, setMargin] = useState({
@@ -57,7 +57,10 @@ function CheckoutStepper({ stepConfig = [] }) {
                 
                   {/* progress bar */}
 
-            <div className="progress-bar" style={{width:`calc(100% ${margin.marginLeft + margin.MarginRight}px)`,marginLeft:margin.marginLeft,marginRight:margin.MarginRight}}>
+                <div className="progress-bar" style={{
+                    width: `calc(100% - ${margin.marginLeft + margin.MarginRight}px)`,
+                    marginLeft: margin.marginLeft, marginRight: margin.MarginRight
+                }}>
                 <div className="progress" style={{width:`${calculateProgressBarWidth()}%`}}></div>
             </div>
             
